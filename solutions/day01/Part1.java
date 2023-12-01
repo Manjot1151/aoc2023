@@ -11,7 +11,7 @@ public class Part1 {
         while (in.hasNextLine()) {
             String s = in.nextLine();
             s =  s.replaceAll("[^\\d]+", "");
-            sum += Integer.parseInt(s.charAt(0) + ""  + s.charAt(s.length() - 1));
+            sum += Integer.parseInt(s.charAt(0) + "" + s.charAt(s.length() - 1));
         }
         System.out.println(sum);
     }

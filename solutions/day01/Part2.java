@@ -30,10 +30,6 @@ public class Part2 {
                     last = i % 10;
                 }
             }
-            if (first == -1)
-                first = last;
-            if (last == -1)
-                last = first;
             sum += first * 10 + last;
         }
         System.out.println(sum);
