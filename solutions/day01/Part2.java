@@ -8,7 +8,7 @@ public class Part2 {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner in = new Scanner(new File("inputs/day01.txt"));
         long sum = 0;
-        String[] digits = { "/", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "0", "1", "2",
+        String[] digits = { null, "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "0", "1", "2",
                 "3", "4", "5", "6", "7", "8", "9" };
         while (in.hasNextLine()) {
             String s = in.nextLine();
@@ -16,7 +16,7 @@ public class Part2 {
             int maxIndex = -1;
             int first = -1;
             int last = -1;
-            for (int i = 0; i < digits.length; i++) {
+            for (int i = 1; i < digits.length; i++) {
                 int firstIndex = s.indexOf(digits[i]);
                 int lastIndex = s.lastIndexOf(digits[i]);
                 if (firstIndex == -1)
